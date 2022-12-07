@@ -5,10 +5,13 @@ const DB_HOST = "clustermern.ox8silc.mongodb.net"
 const API_VERSION = "v1";
 const IP_SERVER = "localhost";
 
+const JWT_SECRET_KEY = "jhasdkjashd15jhasdHIEakjshd97805";
+
 module.exports = {
     DB_USER,
     DB_PASSWORD,
     DB_HOST,
     API_VERSION,
-    IP_SERVER
+    IP_SERVER,
+    JWT_SECRET_KEY
 };
