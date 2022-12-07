@@ -68,6 +68,8 @@ function refreshAccessToken(req, res) {
 
     const {user_id} = jwt.decoded(token);
 
+    //console.log(jwt.decoded(token));
+
     User.findOne({_id: user_id}, (error, userStorage) => {
         if(error){
             res.status(500).send({msg: "Error del servidor"});
